@@ -26,5 +26,5 @@ jobs:
     - run: npm ci
     - run: npm i
     - run: npm run build --if-present
-    - run: pm2 restart flow
+    - run: pm2 restart farflow
   
