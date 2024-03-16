@@ -5,18 +5,22 @@ export class CreateFlowDto {
   @IsNotEmpty()
   @IsString()
   name: string
-
   @IsNotEmpty()
   @IsString()
-  serie: string
+  region: string
+
 
   @IsNotEmpty()
   @Transform(({ value }) => Number(value))
   @IsNumber()
-  level: number
+  day: number
+  @IsNotEmpty()
+  @Transform(({ value }) => Number(value))
+  @IsNumber()
+  month: number
   
   @IsNotEmpty()
   @Transform(({ value }) => Number(value))
   @IsNumber()
-  avg_level: number
+  total: number
 }

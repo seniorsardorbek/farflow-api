@@ -4,7 +4,7 @@ import { IsLoggedIn } from 'src/users/auth/is-loggin.guard';
 import { CreateFlowDto } from './dto/create-flow.dto';
 import { FlowService } from './flow.service';
 
-@Controller('flow')
+@Controller('flows')
 export class FlowController {
   constructor(private readonly flowService: FlowService) {}
   
